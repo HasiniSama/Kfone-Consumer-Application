@@ -31,12 +31,12 @@ namespace Kfone_Consumer_Application
         {
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.servicesButton = new Kfone_Consumer_Application.Component.CardButton();
+            this.devicesButton = new Kfone_Consumer_Application.Component.CardButton();
             this.SuspendLayout();
             // 
             // button1
@@ -62,30 +62,6 @@ namespace Kfone_Consumer_Application
             this.button2.Text = "Login";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(40, 116);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(123, 48);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Devices";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button4.Location = new System.Drawing.Point(179, 115);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(120, 49);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Services";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -125,29 +101,63 @@ namespace Kfone_Consumer_Application
             // 
             // button7
             // 
-
-            string user = "Gastro";
-
             this.button7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.button7.Location = new System.Drawing.Point(503, 47);
+            this.button7.Location = new System.Drawing.Point(505, 47);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(151, 57);
             this.button7.TabIndex = 7;
-            this.button7.Text = "Hi "+user+"!";
+            this.button7.Text = "Hi Gastro!";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // servicesButton
+            // 
+            this.servicesButton.BackColor = System.Drawing.Color.White;
+            this.servicesButton.BackgorundColor = System.Drawing.Color.White;
+            this.servicesButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(100)))), ((int)(((byte)(4)))));
+            this.servicesButton.BorderRadius = 25F;
+            this.servicesButton.BorderSize = 2;
+            this.servicesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.servicesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.servicesButton.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.servicesButton.Location = new System.Drawing.Point(186, 133);
+            this.servicesButton.Name = "servicesButton";
+            this.servicesButton.Size = new System.Drawing.Size(165, 50);
+            this.servicesButton.TabIndex = 10;
+            this.servicesButton.Text = "Services";
+            this.servicesButton.TextColor = System.Drawing.SystemColors.WindowFrame;
+            this.servicesButton.UseVisualStyleBackColor = false;
+            // 
+            // devicesButton
+            // 
+            this.devicesButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.devicesButton.BackgorundColor = System.Drawing.Color.WhiteSmoke;
+            this.devicesButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(100)))), ((int)(((byte)(4)))));
+            this.devicesButton.BorderRadius = 25F;
+            this.devicesButton.BorderSize = 2;
+            this.devicesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.devicesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.devicesButton.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.devicesButton.Location = new System.Drawing.Point(15, 133);
+            this.devicesButton.Name = "devicesButton";
+            this.devicesButton.Size = new System.Drawing.Size(160, 50);
+            this.devicesButton.TabIndex = 9;
+            this.devicesButton.Text = "Devices";
+            this.devicesButton.TextColor = System.Drawing.SystemColors.WindowFrame;
+            this.devicesButton.UseVisualStyleBackColor = false;
+            this.devicesButton.Click += new System.EventHandler(this.cardButton2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.servicesButton);
+            this.Controls.Add(this.devicesButton);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -163,12 +173,12 @@ namespace Kfone_Consumer_Application
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
+        private Component.CardButton devicesButton;
+        private Component.CardButton servicesButton;
     }
 }
 
