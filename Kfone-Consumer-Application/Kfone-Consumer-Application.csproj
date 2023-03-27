@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls\CardControl.cs">
+    <Compile Include="Component\CardButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\CardControl.Designer.cs">
-      <DependentUpon>CardControl.cs</DependentUpon>
+    <Compile Include="Component\CardPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Product_Card.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Product_Card.Designer.cs">
+      <DependentUpon>Product_Card.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
@@ -60,8 +66,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Controls\CardControl.resx">
-      <DependentUpon>CardControl.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\Product_Card.resx">
+      <DependentUpon>Product_Card.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
