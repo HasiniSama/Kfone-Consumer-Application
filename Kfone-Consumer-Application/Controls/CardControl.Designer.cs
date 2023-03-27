@@ -29,7 +29,7 @@ namespace Kfone_Consumer_Application.Controls
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+
         }
 
         #endregion
