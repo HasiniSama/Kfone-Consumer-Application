@@ -21,13 +21,14 @@ namespace Kfone_Consumer_Application
             button1.Visible = !isLoggedIn;
             button2.Visible = !isLoggedIn;
             button5.Visible = isLoggedIn;
+            button7.Visible = isLoggedIn;
         }
 
         private bool CheckIfUserIsLoggedIn()
         {
             // login logic
 
-            return true;
+            return false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -76,6 +77,11 @@ namespace Kfone_Consumer_Application
         }
 
         private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cardButton2_Click(object sender, EventArgs e)
         {
 
         }
