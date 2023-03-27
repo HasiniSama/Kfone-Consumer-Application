@@ -1,0 +1,60 @@
+# .NET
+#############
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+[Bb]in/
+[Oo]bj/
+log/
+*.log
+
+# Visual Studio files
+*.user
+*.aps
+*.vbw
+*.scc
+*.suo
+*.ncb
+*.sdf
+*.opensdf
+*.dbmdl
+*.dbproj.user
+*.v11.suo
+*.v12.suo
+*.v14.suo
+*.vs/
+*.vscode/
+*.sln.docstates
+
+# ReSharper files
+_ReSharper.*
+
+# Test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# Click-Once manifests
+publish/
+*.publish.xml
+
+# Publish Web Output
+*.Publish.xml
+*.pubxml
+*.deploy
+
+# NuGet Packages
+*.nupkg
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Build Results of an ATL Project
+[Dd]ebugPS/
+[Rr]eleasePS/
+dlldata.c
+
+# BenchmarkDotNet.Artifacts folder
+BenchmarkDotNet.Artifacts/
